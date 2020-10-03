@@ -61,41 +61,9 @@
   letter-spacing: 0.06em;
 }
 
-.work-actions {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-  position: absolute;
-  width: 370px;
-  padding: 27px;
-
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.8),
-    rgba(47, 48, 58, 0.8)
-  );
-}
-
-.work-style {
-  margin: 0;
-}
-
 .product {
   position: relative;
   width: 370px;
-}
-
-.work-actions {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .product-thumb {

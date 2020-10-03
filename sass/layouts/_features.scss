@@ -1,3 +1,13 @@
+.feature-list {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.feature-list {
+  @include flexbox;
+}
+
 .feature-list .title {
   color: $title-text-color;
 
@@ -12,6 +22,7 @@
 }
 
 .feature-list .text {
+  @include font(14px, 1.14, 700);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -33,4 +44,37 @@
 
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.work-actions {
+  @include flexbox(center, center);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  position: absolute;
+  width: 370px;
+  padding: 27px;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+}
+
+.work-actions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.work-style {
+  margin: 0;
 }
