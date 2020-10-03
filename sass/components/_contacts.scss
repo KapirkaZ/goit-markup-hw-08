@@ -1,0 +1,39 @@
+.site-info .item {
+  margin-right: 50px;
+}
+
+.site-info {
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  display: inline-flex;
+  align-items: center;
+}
+.icon-e-mail {
+  width: 16px;
+  height: 12px;
+  fill: $primary-text-color;
+  margin-right: 10px;
+}
+
+.site-info .post:hover .icon-e-mail {
+  fill: $accent-color;
+}
+
+.telephon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tel-number {
+  width: 10px;
+  height: 16px;
+  fill: $primary-text-color;
+  margin-right: 10px;
+}
+
+.site-info .telephon:hover .tel-number {
+  fill: $accent-color;
+}

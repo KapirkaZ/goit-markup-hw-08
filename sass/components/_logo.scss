@@ -1,0 +1,38 @@
+.logo {
+  color: $title-text-color;
+  font-family: Raleway, cursive;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-header {
+  color: $accent-color;
+}
+
+.logo {
+  margin-right: 93px;
+}
+
+.footer-contacts .link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-logo {
+  color: $main-title-text-color;
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-header {
+  color: $accent-color;
+}

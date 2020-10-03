@@ -1,0 +1,39 @@
+.footer-social .text {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-title-text-color;
+}
+
+.footer-social:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer-social {
+  width: 270px;
+}
+
+.footer-social .link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link {
+  text-decoration: none;
+  transition-duration: 250ms;
+}
+
+.portfol .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.adres-nav .link:hover {
+  fill: $accent-color;
+}
+
+.page-footer .flexbox {
+  align-items: baseline;
+}

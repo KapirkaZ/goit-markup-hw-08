@@ -1,0 +1,36 @@
+.feature-list .title {
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.feature-list .link {
+  color: $primary-text-color;
+}
+
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.section.feature {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.feature-list .item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.feature-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}

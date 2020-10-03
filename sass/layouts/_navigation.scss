@@ -1,0 +1,90 @@
+.site-nav {
+  display: flex;
+}
+
+.site-nav .link {
+  color: $title-text-color;
+
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  position: relative;
+}
+
+.site-info .link {
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
+
+/* Подстветка текущей страницы */
+.site-nav .link.current {
+  color: $accent-color;
+}
+
+.site-info .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-info .item:last-child {
+  margin-left: 0px;
+  margin-right: 0;
+}
+
+/* подчеркивание текущей страницы */
+.site-nav .current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+.site-nav .current:hover::before {
+  display: block;
+}
+
+// навигация в футере
+
+.footer-address .adres {
+  color: $main-title-text-color;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.adres-nav .link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.adres-nav .item {
+  margin-top: 9px;
+}

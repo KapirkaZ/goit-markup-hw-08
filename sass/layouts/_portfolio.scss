@@ -1,0 +1,154 @@
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttoms {
+  margin-bottom: 50px;
+}
+
+.section.buttoms {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.portfol {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfol-link {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portfol .item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.portfol .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-nav .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfol .text {
+  margin: 0;
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfol .section-links {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: $button-color-secondary;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-actions {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  position: absolute;
+  width: 370px;
+  padding: 27px;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+}
+
+.work-style {
+  margin: 0;
+}
+
+.product {
+  position: relative;
+  width: 370px;
+}
+
+.work-actions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Portfolio */
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms $timing-function;
+}
+
+.portfol .link:hover .description,
+.portfol .link:focus .description {
+  transform: translateY(0);
+}
+
+.portfolio-hover:hover .description {
+  opacity: 1;
+  transition: 250ms;
+}
+
+.portfolio-hover .product-thumb::before {
+  position: absolute;
+  content: "";
+
+  opacity: 0;
+}
+
+.item.description::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $button-bg-color;
+}

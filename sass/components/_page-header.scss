@@ -1,0 +1,14 @@
+/* Page header */
+
+.page-header {
+  background-color: #fff;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
+}

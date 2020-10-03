@@ -1,0 +1,61 @@
+/* подсветка синим при наведении */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-info .link:hover,
+.site-info .link:focus,
+.adres-nav .link:hover,
+.adres-nav .link:focus {
+  color: $accent-color;
+}
+
+.team {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.section-links {
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.content-box .work-photo {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
+}
+
+.our-work {
+  margin-bottom: 50px;
+}
+.content-box .work-photo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
