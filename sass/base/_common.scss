@@ -1,3 +1,10 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  outline: 2px solid red;
+}
+
 body {
   color: $primary-text-color;
   background-color: $main-title-text-color;
@@ -9,12 +16,6 @@ body {
 
 ul {
   list-style: none;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
 }
 
 /* Main nav */
