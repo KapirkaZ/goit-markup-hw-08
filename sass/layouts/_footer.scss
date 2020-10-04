@@ -3,6 +3,22 @@
   background-color: $footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: $desktop - 1) {
+    text-align: center;
+  }
+}
+
+.flex-tablet {
+  @include for-size(tablet) {
+    @include flexbox(flex-start, baseline);
+  }
+}
+
+.flex-desktop {
+  @include for-size(desktop) {
+    @include flexbox(flex-start, baseline);
+  }
 }
 
 .footer-sighning {
