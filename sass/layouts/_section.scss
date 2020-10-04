@@ -22,8 +22,15 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
+
+  @include font(28px, 1.18, 700);
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    @include font(36px, 1.17, 700);
+  }
 }
 
 .section-links {
@@ -56,6 +63,10 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
