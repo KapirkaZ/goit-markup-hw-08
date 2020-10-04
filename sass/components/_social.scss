@@ -1,4 +1,6 @@
 .social-list .link {
+  @include flexbox(center, center);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,4 +32,8 @@
 
 .item-social:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-list {
+  @include flexbox(center, center);
 }
