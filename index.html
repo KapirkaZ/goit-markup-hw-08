@@ -142,6 +142,10 @@
             <div class="product">
               <div class="product-thumb">
                 <img
+                  srcset="
+                    ./images/desktop/desctop-370.jpg    1x,
+                    ./images/desktop/desctop-370@2x.jpg 2x
+                  "
                   src="./images/box1.jpg"
                   alt="Человек за ноутбуком"
                   width="370"
@@ -156,6 +160,10 @@
             <div class="product">
               <div class="product-thumb">
                 <img
+                  srcset="
+                    ./images/desktop/mobile-370.jpg    1x,
+                    ./images/desktop/mobile-370@2x.jpg 2x
+                  "
                   src="./images/box2.jpg"
                   alt="Человек с мобильным приложением"
                   width="370"
@@ -170,6 +178,10 @@
             <div class="product">
               <div class="product-thumb">
                 <img
+                  srcset="
+                    ./images/desktop/design-370.jpg    1x,
+                    ./images/desktop/design-370@2x.jpg 2x
+                  "
                   src="./images/box3.jpg"
                   alt="Человек с планшетом"
                   width="370"
@@ -189,7 +201,30 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list feature-list-workers flexbox">
           <li class="item">
-            <img src="./images/Igor.png" alt="Фото Игоря" width="270" />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/igor-270.jpg    1x,
+                  ./images/desktop/igor-270@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/igor-354.jpg    1x,
+                  ./images/tablet/igor-354@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/igor-450.jpg    1x,
+                  ./images/mobile/igor-450@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./images/Igor-270.png" alt="Игорь Демьяненко" />
+            </picture>
             <h3 class="title">Игорь Демьяненко</h3>
             <p class="text">Product Designer</p>
             <ul class="list flexbox social-list">
@@ -235,7 +270,30 @@
           </li>
 
           <li class="item">
-            <img src="./images/Olga.png" alt="Фото Ольги" width="270" />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/olga-270.jpg    1x,
+                  ./images/desktop/olga-270@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/olga-354.jpg    1x,
+                  ./images/tablet/olga-354@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/olga-450.jpg    1x,
+                  ./images/mobile/olga-450@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./images/Olga-270.png" alt="Ольга Репина" />
+            </picture>
             <h3 class="title">Ольга Репина</h3>
             <p class="text workers">Frontend Developer</p>
             <ul class="list flexbox social-list">
@@ -281,7 +339,30 @@
           </li>
 
           <li class="item">
-            <img src="./images/Nikolaj.png" alt="Фото Николая" width="270" />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/nikolay-270.jpg    1x,
+                  ./images/desktop/nikolay-270@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/nikolay-354.jpg    1x,
+                  ./images/tablet/nikolay-354@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/nikolay-450.jpg    1x,
+                  ./images/mobile/nikolay-450@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./images/Nikolaj-270.png" alt="Николай Тарасов" />
+            </picture>
             <h3 class="title">Николай Тарасов</h3>
             <p class="text">Marketing</p>
             <ul class="list flexbox social-list">
@@ -327,7 +408,30 @@
           </li>
 
           <li class="item">
-            <img src="./images/Mihail.png" alt="Фото Михаила" width="270" />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/mikhail-270.jpg    1x,
+                  ./images/desktop/mikhail-270@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/mikhail-354.jpg    1x,
+                  ./images/tablet/mikhail-354@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/mikhail-450.jpg    1x,
+                  ./images/mobile/mikhail-450@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./images/Mihail-270.png" alt="Михаил Ермаков" />
+            </picture>
             <h3 class="title">Михаил Ермаков</h3>
             <p>UI Designer</p>
             <ul class="list flexbox social-list">
