@@ -6,9 +6,134 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+
+  position: relative;
+  @include font(18px, 1.17, 500);
 }
 
 .page-header .flexbox {
   justify-content: flex-end;
+  align-items: center;
+  @include flexbox(space-between, center);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
+  @include flexbox(space-between, center);
+}
+
+.header-nav {
+  @media (max-width: $tablet - 1) {
+    margin-bottom: 60px;
+  }
+
+  @include for-size(tablet) {
+    @include flexbox(flex-start, center);
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-left: 88px;
+    margin-right: 84px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  @media (max-width: $tablet - 1) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include for-size(tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
+
+.site-nav .link {
+  color: $title-text-color;
+
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  position: relative;
+
+  @include for-size(tablet) {
+    padding: 32px 0;
+  }
+}
+
+.site-nav .link.current {
+  color: $accent-color;
+}
+
+.site-info .link {
+  @include flexbox(center, center);
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.site-info .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    @include font(12px, 1.17, 500);
+  }
+
+  @include for-size(desktop) {
+    @include flexbox;
+  }
+}
+
+.site-info .item:last-child {
+  margin-left: 0px;
+  margin-right: 0;
+}
+
+.site-info .item {
+  margin-right: 50px;
+
+  @media (max-width: $tablet - 1) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.site-info {
+  // display: flex;
   align-items: center;
 }
