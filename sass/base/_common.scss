@@ -10,6 +10,7 @@ body {
 
   font-family: Roboto, sans-serif;
   font-size: 14px;
+  @include font(14px, 1.71);
   line-height: 1.71;
 }
 

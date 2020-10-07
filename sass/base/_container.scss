@@ -1,21 +1,39 @@
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   // width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   @include for-size(mobile) {
+//     width: 480px;
+//   }
+
+//   @include for-size(tablet) {
+//     width: 768px;
+//   }
+
+//   @include for-size(desktop) {
+//     width: 1280px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//   }
+// }
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  // width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0px auto;
 
   @include for-size(mobile) {
-    width: 480px;
+    width: $mobile - 18px;
   }
 
   @include for-size(tablet) {
-    width: 768px;
+    width: $tablet - 18px;
   }
 
   @include for-size(desktop) {
-    width: 1280px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: $desktop - 18px;
   }
 }

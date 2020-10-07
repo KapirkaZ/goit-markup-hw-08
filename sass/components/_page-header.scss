@@ -9,6 +9,10 @@
 
   position: relative;
   @include font(18px, 1.17, 500);
+
+  @media screen and (max-width: $tablet - 1) {
+    padding: 10px 0;
+  }
 }
 
 .page-header .flexbox {
@@ -121,13 +125,13 @@
   margin-right: 50px;
 
   @media (max-width: $tablet - 1) {
-    &:not(:last-child) {
+    .site-info .item:not(:last-child) {
       margin-bottom: 16px;
     }
   }
 
   @include for-size(desktop) {
-    &:not(:last-child) {
+    .site-info .item:not(:last-child) {
       margin-right: 30px;
     }
   }
@@ -135,5 +139,13 @@
 
 .site-info {
   // display: flex;
-  align-items: center;
+  // align-items: center;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    @include font(12px, 1.17, 500);
+    text-align: left;
+  }
+
+  @include for-size(desktop) {
+    @include flexbox;
+  }
 }
