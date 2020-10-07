@@ -138,8 +138,8 @@
 }
 
 .site-info {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     @include font(12px, 1.17, 500);
     text-align: left;
@@ -148,4 +148,24 @@
   @include for-size(desktop) {
     @include flexbox;
   }
+}
+
+.menu-container {
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-right-color: #fff;
+  }
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
