@@ -1,33 +1,9 @@
-.clients-list .link {
-  @include flexbox(center, center);
-
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
-}
-
-.clients-list .link:hover,
-.clients-list .link:focus {
-  border-color: $accent-color;
-  --color1: #2196f3;
-  --color2: #2196f3;
-  transition-duration: 250ms;
-}
-
-.feature-list .item:not(:last-child),
-.examples-list .item:not(:last-child),
-.team .item:not(:last-child),
-.clients-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients-list {
   @include flexbox;
   flex-wrap: wrap;
 }
 
-.clients-list .item {
+.clients-list__item {
   @media screen and (max-width: $tablet - 1) {
     flex-basis: calc((100% - 1 * 30px) / 2);
     &:nth-child(odd) {
@@ -57,18 +33,20 @@
   }
 }
 
-.icon-antenna::before {
-  background-image: url(../css/svg-icons/antenna.svg);
-}
+.clients-list__link {
+  @include flexbox(center, center);
 
-.icon-clock::before {
-  background-image: url(../css/svg-icons/clock.svg);
-}
+  height: 90px;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  fill: $icon-color;
 
-.icon-diagram::before {
-  background-image: url(../css/svg-icons/diagram.svg);
-}
+  transition: border-color $duration $timing-function,
+    fill $duration $timing-function;
 
-.icon-astronaut::before {
-  background-image: url(../css/svg-icons/astronaut.svg);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
 }
