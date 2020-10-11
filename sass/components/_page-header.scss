@@ -1,18 +1,24 @@
 /* Page header */
 
 .page-header {
-  background-color: #fff;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid #ececec;
+  // background-color: #fff;
+  // font-weight: 500;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // border-bottom: 1px solid #ececec;
 
   position: relative;
-  @include font(18px, 1.17, 500);
+  @include for-size(tablet) {
+    @include font(inherit, 1.14, 500);
+  }
 
   @media screen and (max-width: $tablet - 1) {
     padding: 10px 0;
   }
+}
+
+.flex-header {
+  @include flexbox(space-between, center);
 }
 
 .page-header .flexbox {
@@ -21,13 +27,13 @@
   @include flexbox(space-between, center);
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+//   margin-right: auto;
 
-  @include flexbox(space-between, center);
-}
+//   @include flexbox(space-between, center);
+// }
 
 .header-nav {
   @media (max-width: $tablet - 1) {
@@ -151,21 +157,32 @@
 }
 
 .menu-container {
-  @media screen and (max-width: $tablet - 1) {
+  @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     z-index: 100;
+
     padding-top: 60px;
     padding-bottom: 60px;
-    border-right-color: #fff;
-  }
-}
 
-.flex-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #ffffff;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid #ececec;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+  }
 }
